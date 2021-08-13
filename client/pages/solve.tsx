@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { calculateProof, INITIAL_GRID, prettyPrintArray, Footer } from './util'
+import { calculateProof, INITIAL_GRID, prettyPrintArray } from '../lib/util'
 import {Md5} from 'ts-md5/dist/md5';
 
 const Solve: NextPage = () => {
@@ -89,7 +89,15 @@ const Solve: NextPage = () => {
 
       </main>
 
-      <Footer />
+      <footer className={styles.footer}>
+        <a
+          href="https://nibnalin.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Made by nibnalin.
+        </a>
+      </footer>
     </div>
   )
 }

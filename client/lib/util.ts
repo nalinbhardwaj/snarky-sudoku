@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css'
 const snarkjs = require("snarkjs");
 
 export const getVerificationKey = async () => {
@@ -58,15 +57,3 @@ export const prettyPrintArray = function (json: string | number[][]) {
 
   return output;
 }
-
-export const Footer = () => (
-  <footer className={styles.footer}>
-    <a
-      href="https://nibnalin.me"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Made by nibnalin.
-    </a>
-  </footer>
-)

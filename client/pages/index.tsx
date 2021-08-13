@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import { Footer } from './util'
 
 const Home: NextPage = () => {
   return (
@@ -41,7 +40,15 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <Footer />
+      <footer className={styles.footer}>
+        <a
+          href="https://nibnalin.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Made by nibnalin.
+        </a>
+      </footer>
     </div>
   )
 }
