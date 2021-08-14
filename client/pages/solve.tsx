@@ -57,11 +57,11 @@ const Solve: NextPage = () => {
 
         <div className={styles.grid}>
           <div>
-            <p className={styles.description}>Unsolved grid</p>
+            <p className={styles.description}>Puzzle grid</p>
             <textarea rows={10} className={styles.textarea} value={unsolvedGridText} onChange={event => setUnsolvedGridText(event.target.value)} />
           </div>
           <div>
-          <p className={styles.description}>Solved grid</p>
+          <p className={styles.description}>Solution grid</p>
           <textarea rows={10} className={styles.textarea} value={solvedGridText} onChange={event => setSolvedGridText(event.target.value)} />
           </div>
         </div>

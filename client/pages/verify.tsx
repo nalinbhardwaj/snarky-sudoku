@@ -51,7 +51,7 @@ const Verify: NextPage = () => {
 
         <div className={styles.grid}>
           <div>
-            <p className={styles.description}>Unsolved grid</p>
+            <p className={styles.description}>Puzzle grid</p>
             <textarea rows={10} className={styles.textarea} value={unsolvedGridText} onChange={event => setUnsolvedGridText(event.target.value)} />
           </div>
           <div>
@@ -68,7 +68,7 @@ const Verify: NextPage = () => {
         {status ? (
           <>
             <p className={styles.description}>✅ Correct proof</p>
-            <p>This proof corresponds to a valid preimage for this unsolved grid.</p>
+            <p>This proof corresponds to a valid solution for this puzzle grid.</p>
           </>
           ) : (
           <>
