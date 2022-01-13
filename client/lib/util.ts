@@ -10,9 +10,9 @@ export const calculateProof = async function (unsolvedGrid: number[][],
   solvedGrid: number[][]) {
   const { proof, publicSignals } =
     await snarkjs.groth16.fullProve(
-      { "in1": 1, "in2": 1, "out": 2 },
-      "./sudoku.wasm",
-      "./sudoku.zkey"
+      { "a": 1, "b": 2 },
+      "./circuit.wasm",
+      "./circuit.zkey"
     );
   const res = await checkProof(proof, publicSignals);
   return {
