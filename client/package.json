@@ -13,7 +13,7 @@
     "next": "11.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "snarkjs": "^0.4.6",
+    "snarkjs": "git+https://github.com/nalinbhardwaj/snarkjs.git#d1c10a6373c02eaa214968da96e2514ddc8c8b92",
     "ts-md5": "^1.2.9"
   },
   "devDependencies": {

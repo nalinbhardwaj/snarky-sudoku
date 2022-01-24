@@ -1,7 +1,7 @@
 const snarkjs = require("snarkjs");
 
 export const getVerificationKey = async () => {
-  return await fetch("./verification_key.json").then(function(res) {
+  return await fetch("./vk.json").then(function(res) {
     return res.json();
   });
 }
@@ -11,8 +11,8 @@ export const calculateProof = async function (unsolvedGrid: number[][],
   const { proof, publicSignals } =
     await snarkjs.groth16.fullProve(
       { solved_grid: solvedGrid, unsolved_grid: unsolvedGrid },
-      "./sudoku.wasm",
-      "./sudoku.zkey"
+      "./circuit.wasm",
+      "./circuit.zkey"
     );
   const res = await checkProof(proof, publicSignals);
   return {
