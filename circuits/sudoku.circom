@@ -1,5 +1,7 @@
-include "../node_modules/circomlib/circuits/comparators.circom"
-include "../node_modules/circomlib/circuits/gates.circom"
+pragma circom 2.0.3;
+
+include "../node_modules/circomlib/circuits/comparators.circom";
+include "../node_modules/circomlib/circuits/gates.circom";
 
 template InRange(bits) {
   signal input value;
@@ -39,7 +41,7 @@ template ContainsAll(SIZE) {
 
 template Main(SIZE, SUBSIZE) {
   signal input unsolved_grid[SIZE][SIZE];
-  signal private input solved_grid[SIZE][SIZE];
+  signal input solved_grid[SIZE][SIZE];
 
   component range_checkers[SIZE][SIZE][2];
   component is_solution[SIZE][SIZE];
@@ -113,4 +115,4 @@ template Main(SIZE, SUBSIZE) {
   }
 }
 
-component main = Main(9, 3);
+component main {public [unsolved_grid]} = Main(9, 3);
