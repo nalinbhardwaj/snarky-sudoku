@@ -2860,10 +2860,9 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-snarkjs@^0.4.13:
+"snarkjs@git+https://github.com/nalinbhardwaj/snarkjs.git#72ca104bd75b5be1ea4e42cf34da926da17b2293":
   version "0.4.13"
-  resolved "https://registry.yarnpkg.com/snarkjs/-/snarkjs-0.4.13.tgz#acf5baa70413fe3c2b1de2082eee59f2759472a7"
-  integrity sha512-+GlCPLveNrFZob1PejLzRYsvyMLpTArkS/ncqodNJfWwrcfg60HRngvMZBvTP2Toa5LD1hS61c3ajbNIcPj5EQ==
+  resolved "git+https://github.com/nalinbhardwaj/snarkjs.git#72ca104bd75b5be1ea4e42cf34da926da17b2293"
   dependencies:
     "@iden3/binfileutils" "0.0.10"
     blake2b-wasm "^2.4.0"
