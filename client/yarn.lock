@@ -1349,10 +1349,20 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-ffjavascript@0.2.48, ffjavascript@^0.2.48:
+ffjavascript@0.2.48:
   version "0.2.48"
   resolved "https://registry.yarnpkg.com/ffjavascript/-/ffjavascript-0.2.48.tgz#0ca408471d7b18bfc096a9631aa3ef3549c8c82b"
   integrity sha512-uNrWP+odLofNmmO+iCCPi/Xt/sJh1ku3pVKmKWVWCLFfdCP69hvRrogKUIGnsdiINcWn0lGxcEh5oEjStMFXQQ==
+  dependencies:
+    big-integer "^1.6.48"
+    wasmbuilder "^0.0.12"
+    wasmcurves "0.1.0"
+    web-worker "^1.2.0"
+
+ffjavascript@^0.2.48:
+  version "0.2.51"
+  resolved "https://registry.yarnpkg.com/ffjavascript/-/ffjavascript-0.2.51.tgz#5d714686e3a5bde96dc57be84babc61911283629"
+  integrity sha512-qshvFIjU6cWMQOtKwpU4JZOKfKHfN8TFJ0Tst1Bd/V8AfgzAUScqA+zRT6sLGdV9zlumLsMgrLzGVRK4kf6RQA==
   dependencies:
     big-integer "^1.6.48"
     wasmbuilder "^0.0.12"
@@ -2860,9 +2870,9 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-"snarkjs@git+https://github.com/nalinbhardwaj/snarkjs.git#72ca104bd75b5be1ea4e42cf34da926da17b2293":
-  version "0.4.13"
-  resolved "git+https://github.com/nalinbhardwaj/snarkjs.git#72ca104bd75b5be1ea4e42cf34da926da17b2293"
+"snarkjs@git+https://github.com/nalinbhardwaj/snarkjs.git#cb6badc49ed12b231df6d773448ed01de249f3bd":
+  version "0.4.15"
+  resolved "git+https://github.com/nalinbhardwaj/snarkjs.git#cb6badc49ed12b231df6d773448ed01de249f3bd"
   dependencies:
     "@iden3/binfileutils" "0.0.10"
     blake2b-wasm "^2.4.0"
