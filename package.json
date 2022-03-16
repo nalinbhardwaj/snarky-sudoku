@@ -9,7 +9,10 @@
   },
   "devDependencies": {
     "hardhat": "^2.2.0",
-    "hardhat-circom": "^1.0.0"
+    "hardhat-circom": "../projectsophon/hardhat-circom"
+  },
+  "resolutions": {
+    "circom2": "link:../circom/npm"
   },
   "engines": {
     "node": ">=14"

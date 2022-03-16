@@ -8,6 +8,11 @@ module.exports = {
   circom: {
     inputBasePath: "./circuits",
     ptau: "pot15_final.ptau",
-    circuits: [{ name: "sudoku" }],
+    circuits: [
+      {
+        name: "sudoku",
+        version: 2,
+      }
+    ],
   },
 };
