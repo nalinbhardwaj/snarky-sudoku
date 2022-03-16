@@ -801,13 +801,14 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-circom2@0.1.0:
-  version "0.0.0"
-  uid ""
-
-"circom2@link:../circom/npm":
-  version "0.0.0"
-  uid ""
+circom2@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/circom2/-/circom2-0.2.0.tgz#e4a254725d5b02fc084f556639e6fed72c443a40"
+  integrity sha512-ODA9cNWS3+JYZ5QmkX6OZolBj3i1Ra4Ga6FR5fNkUAmG0HdN4v4LIeFPBXQp156cF20rWEFCLoysAzZAJL5gLA==
+  dependencies:
+    "@wasmer/wasi" "^0.12.0"
+    is-typed-array "^1.1.8"
+    path-browserify "^1.0.1"
 
 circom@0.5.46:
   version "0.5.46"
@@ -840,7 +841,7 @@ circom_runtime@0.1.17:
   dependencies:
     ffjavascript "0.2.48"
 
-circomlib@^2.0.2:
+circomlib@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/circomlib/-/circomlib-2.0.3.tgz#88816e22f269ba491f47c825a2e238d14fd0e877"
   integrity sha512-OeG1YBcqS8mnsOI1WAZePbyAVBMf398sSQfXetpPAb2HC0+1r9Q6kN/qQaHkJZ77BZmXn5dUqQTa5g6d5BDS3Q==
@@ -1440,13 +1441,15 @@ growl@1.10.5:
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
   integrity sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
 
-hardhat-circom@../projectsophon/hardhat-circom:
-  version "2.1.0"
+hardhat-circom@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/hardhat-circom/-/hardhat-circom-3.0.0.tgz#15ce187d5912875ca96e123fc124e2e9ef1e9915"
+  integrity sha512-vgFNzepWjlAyYY5fPLKRCaojFOtl+bQRRU+opMMfkxF3VlpGeeyKruIakTi5Mj6cXJ6jjp84moYANcFxzikM+g==
   dependencies:
     "@phated/unionfs" "^4.5.0"
     camelcase "^6.3.0"
     circom "0.5.46"
-    circom2 "0.1.0"
+    circom2 "^0.2.0"
     debug "^4.3.3"
     memfs "^3.4.1"
     shimmer "^1.2.1"
@@ -2567,7 +2570,7 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-snarkjs@^0.4.13, snarkjs@^0.4.14:
+snarkjs@^0.4.14:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/snarkjs/-/snarkjs-0.4.15.tgz#b7808188a9b92e819ee68cc5b98a0f5c763c5e6f"
   integrity sha512-nyjzLKiNKEnq87RpwnSA/QxjYgIQNFq/IBNmesfPM2ijs/evROvmgM+wjVsdd6UxKc0UDgWbdFJxTffOjftJPg==
