@@ -15,7 +15,7 @@
     "circom2": "link:../circom/npm"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
     "circom:dev": "hardhat circom --deterministic --debug --verbose",
