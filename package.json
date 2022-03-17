@@ -4,15 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "circomlib": "^2.0.2",
-    "snarkjs": "^0.4.13"
+    "circomlib": "^2.0.3"
   },
   "devDependencies": {
     "hardhat": "^2.2.0",
-    "hardhat-circom": "^1.0.0"
+    "hardhat-circom": "^3.0.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
     "circom:dev": "hardhat circom --deterministic --debug --verbose",

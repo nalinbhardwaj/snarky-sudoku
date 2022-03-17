@@ -1,7 +1,7 @@
 const snarkjs = require("snarkjs");
 
 export const getVerificationKey = async () => {
-  return await fetch("./verification_key.json").then(function(res) {
+  return await fetch("./sudoku.vkey.json").then(function(res) {
     return res.json();
   });
 }
